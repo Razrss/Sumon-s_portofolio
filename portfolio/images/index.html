@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio sumon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .active-link {
+            /* Add your styles for active tab links here */
+            font-weight: bold;
+        }
+        .active-tab {
+            /* Add your styles for active tab contents here */
+            display: block;
+        }
+        .tab-contents {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class='header-text'>
+                <p>Developer</p>
+                <h1>Hi, I am <span>Sumon Sapkota</span><br> from Belgium</h1>
+            </div>
+        </div>
+    </div>
+<!-------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p class="About-me">I am 16 years old, started taking programming seriously a year ago, and find it pretty interesting and fun actually to do. I have developed some games and smaller projects with mainly Python. This is my first try as a web dev, and I think it went pretty good and it looks nice.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">NIGGA</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>  
+                <div class="tab-contents active-tab" id="skills">
+                    <ul><li><span>UI/UX</span><br>Designing Web/App interfaces</li></ul><br>
+                    <ul><li><span>Web dev</span><br>Web/App Development</li></ul><br>
+                    <ul><li><span>App development</span><br>Building Android Apps</li></ul><br>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul><li><span>UI/UX</span><br>Designing Web/App Interfaces</li></ul><br>
+                    <ul><li><span>Web dev</span><br>Web/App Development</li></ul><br>
+                    <ul><li><span>App development</span><br>Building Android Apps</li></ul><br>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul><li><span>UI/UX</span><br>Designing Web/App Interfaces</li></ul><br>
+                    <ul><li><span>Web dev</span><br>Web/App Development</li></ul><br>
+                    <ul><li><span>App development</span><br>Building Android Apps</li></ul><br>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+
+    function opentab(tabname) {
+        var currentLink = event.currentTarget;
+        var currentTab = document.getElementById(tabname);
+
+        // If the clicked tab is already active, toggle it off
+        if (currentLink.classList.contains("active-link")) {
+            currentLink.classList.remove("active-link");
+            currentTab.classList.remove("active-tab");
+        } else {
+            // Remove active classes from all tab links and contents
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            // Add active classes to the clicked tab and corresponding content
+            currentLink.classList.add("active-link");
+            currentTab.classList.add("active-tab");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio sumon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/actual_favicon.jpg" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class='header-text'>
+                <p>Developer</p>
+                <h1>Hi,I am <span>Sumon Sapkota</span><br> from Belgium</h1>
+        </div>
+</div>
+<!-------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p class="About-me">I am 16 years old started taking programming serious a year ago and 
+                    find it pretty interesting and fun actually to do. 
+                    I have developed some games and smaller projects with mainly python, 
+                    this is my first try as a web dev and I think it went pretty good and it looks nice.</p>
+            <div class="tab-titles">
+                <p id="skills-tab" class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p id="experience-tab" class="tab-links" onclick="opentab('experience')">Experience </p>
+                <p id="education-tab" class="tab-links" onclick="opentab('education')">Education</p>
+            </div>  
+            <div id="skills" class="tab-contents active-tab">
+                <ul><li><span>UI/UX</span><br>Designing Web/App Interfaces</li></ul><br>
+                <ul><li><span>Web dev</span><br>Web/App Development</li></ul><br>
+                <ul><li><span>App development</span><br>Building Android Apps</li></ul><br>
+            </div>
+            <div id="experience" class="tab-contents">
+                <ul><li><span>Python</span><br><u>Intermediate:</u><br> Made some challenging projects and games, <br>where i learned working with different types of functions and variabless</li></ul><br>
+                <ul><li><span>Html</span><br><u>Beginner:</u><br> Just this website/portfolio </li></ul><br>
+                <ul><li><span>Jss</span><br><u>Learning:</u><br> Just this website/portfolio</li></ul><br>
+                <ul><li><span>CSS</span><br><u>Beginner:</u><br> Just this website/portfolio</li></ul><br>
+            </div>
+            <div id="education" class="tab-contents">
+                <ul><li><span>Nothin noteworthy yet... </span>
+        </div>
+    </div>
+</div>
+<!-----sevices--->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web develop</h2>
+            <p>a;slkjf;saljfd;asdjf;alsjf;oasdjjfoisadlkfasd;ljas
+                ;ldjfjsdfa;osdjfj;aiej;ladskjfa;sdlkf</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2>UI/UX develop</h2>
+            <p>a;slkjf;saljfd;asdjf;alsjf;oasdjjfoisadlkfasd;ljas;ldjf.
+                jsdfa;osdjfj;aiej;ladskjfa;sdlkf</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2>App develop</h2>
+            <p>a;slkjf;saljfd;asdjf;alsjf;oasdjjfoisadlkfasd;ljas;ldjfj
+                sdfa;osdjfj;aiej;ladskjfa;sdlkf</p>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+<!---------------porfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people in the world. 
+                        You can download it on the app store.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people in the world. 
+                        You can download it on the app store.</p>
+                        <a href="#"></a>
+                    </div>
+                </div> 
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you to the talented people in the world. 
+                        You can download it on the app store.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#"class='btn'>See more</a>
+    </div>
+</div>
+<!-----------------contact ------------------------>
+<div id="contact">
+<div class="container">
+    <div class="row">   
+        <div class="contact-left">
+            <h1 class="sub-title ">Contact me</h1>
+            <p>contact@example.com</p>
+            <p>044561345</p>
+            <!-----------------later ------------------------
+            <div class="Social icons">
+                <a href=""></a>
+            </div>---->
+        </div>
+        <div class="contact-right">
+            <form> 
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+</div>
+    
+    
+    
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        document.getElementById(tabname + "-tab").classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");       
+    }
+</script>
+</body>
+</html> 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/sumon/OneDrive/Desktop/portfolio/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio sumon</title>
+    <link rel="stylesheet" href="./portfolio sumon_files/style.css">
+</head>
+<body>
+<div id="header">
+        <div class="container">
+            <nav>
+                <img src="./portfolio sumon_files/logo.png" class="logo">
+                <ul>
+                    <li><a href="file:///C:/Users/sumon/OneDrive/Desktop/portfolio/index.html#">Home</a></li>
+                    <li><a href="file:///C:/Users/sumon/OneDrive/Desktop/portfolio/index.html#">About</a></li>
+                    <li><a href="file:///C:/Users/sumon/OneDrive/Desktop/portfolio/index.html#">Services</a></li>
+                    <li><a href="file:///C:/Users/sumon/OneDrive/Desktop/portfolio/index.html#">Portfolio</a></li>
+                    <li><a href="file:///C:/Users/sumon/OneDrive/Desktop/portfolio/index.html#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi,I am <span>Sumon Sapkota</span><br> from Belgium</h1>
+        </div>
+</div>
+<!-------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./portfolio sumon_files/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p class="About-me">I am 16 years old started taking programming serious a year ago and 
+                    find it pretty interesting and fun actually to do. 
+                    I have developed some games and smaller projects with mainly python, 
+                    this is my first try as a web dev and I think it went pretty good and it look nice.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link">Skills</p>
+                <p class="tab-links exp-link">Experience </p>
+                <p class="tab-links">Education</p>
+            </div>  
+            <div class="tab-contents active-tab">
+                <ul><li><span>UI/UX</span><br>Designing Web/App Interfaces</li></ul><br>
+                <ul><li><span>Web dev</span><br>Web/App Development</li></ul><br>
+                <ul><li><span>App development</span><br>Building Android Apps</li></ul><br>
+            </div>
+            <div class="tab-contents">
+                <ul><li><span>UI/UX</span><br>Designing Web/App Interfaces</li></ul><br>
+                <ul><li><span>Web dev</span><br>Web/App Development</li></ul><br>
+                <ul><li><span>App development</span><br>Building Android Apps</li></ul><br>
+            </div>
+            <div class="tab-contents">
+                <ul><li><span>UI/UX</span><br>Designing Web/App Interfaces</li></ul><br>
+                <ul><li><span>Web dev</span><br>Web/App Development</li></ul><br>
+                <ul><li><span>App development</span><br>Building Android Apps</li></ul><br>  
+        </div>
+    </div>
+</div>
+<script>
+var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents"); 
+         
+    function opentab(tabname) {
+            for ( tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");       
+    }
+</script>
+
+</div></div></div></body></html>
